@@ -1,0 +1,133 @@
+@mixin descriptionHeader {
+  font-size: 1.45rem;
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+}
+
+@mixin descriptionParagraf {
+  margin-top: 0.5rem;
+  margin-left: 20px;
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  main {
+    max-width: 60rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    #header {
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+      margin-top: 2rem;
+      border-bottom: 2px solid black;
+      padding-bottom: 1rem;
+
+      .mainLogo {
+        h2 {
+          font-size: 3.5rem;
+          font-family: 'Poiret One', cursive;
+          letter-spacing: 7px;
+          margin-bottom: 0.4rem;
+        }
+        .telephone {
+          font-size: 2rem;
+          font-family: 'Poiret One', cursive;
+        }
+      }
+      .secondLogo {
+        .slogan {
+          margin-top: 1.5rem;
+          font-size: 1.4rem;
+          font-family: 'Roboto', sans-serif;
+        }
+        .promoQuestion {
+          font-size: 2rem;
+          font-family: 'Roboto', sans-serif;
+        }
+      }
+    }
+    #topNav {
+      width: 100%;
+      margin-top: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid black;
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        li {
+          a {
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+    #mainContent {
+      width: 100%;
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row;
+      .ourAbility { /* слева */
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        h3  {
+          font-size: 2rem;
+          text-align: center;
+          margin-bottom: 2rem;
+          font-weight: bold;
+          font-family: 'Open Sans', sans-serif;
+        }
+        .description {
+          margin-top: 0.5rem;
+          margin-bottom: 1.5rem;
+          h4  {
+            @include descriptionHeader;
+          }
+          p {
+            @include descriptionParagraf;
+          }
+        }
+      }
+      .ourAdvantage { /* справа */
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        h3  {
+          text-align: center;
+          font-size: 2rem;
+          margin-bottom: 2rem;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+        }
+        .description {
+          margin-top: 0.5rem;
+          margin-bottom: 2.5rem;
+          h4  {
+            @include descriptionHeader;
+          }
+          p {
+            @include descriptionParagraf;
+          }
+        }
+      }
+    }
+    footer {
+      width: 100%;
+      height: 4rem;
+      background-color: grey;
+    }
+  }
+}

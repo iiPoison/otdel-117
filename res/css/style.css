@@ -1,0 +1,107 @@
+@charset "UTF-8";
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px; }
+  body main {
+    max-width: 60rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    body main #header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 2rem;
+      border-bottom: 2px solid black;
+      padding-bottom: 1rem; }
+      body main #header .mainLogo h2 {
+        font-size: 3.5rem;
+        font-family: 'Poiret One', cursive;
+        letter-spacing: 7px;
+        margin-bottom: 0.4rem; }
+      body main #header .mainLogo .telephone {
+        font-size: 2rem;
+        font-family: 'Poiret One', cursive; }
+      body main #header .secondLogo .slogan {
+        margin-top: 1.5rem;
+        font-size: 1.4rem;
+        font-family: 'Roboto', sans-serif; }
+      body main #header .secondLogo .promoQuestion {
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif; }
+    body main #topNav {
+      width: 100%;
+      margin-top: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid black; }
+      body main #topNav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+        body main #topNav ul li a {
+          font-family: 'Open Sans', sans-serif;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 1.5rem; }
+    body main #mainContent {
+      width: 100%;
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row; }
+      body main #mainContent .ourAbility {
+        /* ╤Б╨╗╨╡╨▓╨░ */
+        width: 50%;
+        display: flex;
+        flex-direction: column; }
+        body main #mainContent .ourAbility h3 {
+          font-size: 2rem;
+          text-align: center;
+          margin-bottom: 2rem;
+          font-weight: bold;
+          font-family: 'Open Sans', sans-serif; }
+        body main #mainContent .ourAbility .description {
+          margin-top: 0.5rem;
+          margin-bottom: 1.5rem; }
+          body main #mainContent .ourAbility .description h4 {
+            font-size: 1.45rem;
+            font-family: 'Comfortaa', cursive;
+            font-weight: bold; }
+          body main #mainContent .ourAbility .description p {
+            margin-top: 0.5rem;
+            margin-left: 20px;
+            font-size: 1.1rem;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.4; }
+      body main #mainContent .ourAdvantage {
+        /* ╤Б╨┐╤А╨░╨▓╨░ */
+        width: 50%;
+        display: flex;
+        flex-direction: column; }
+        body main #mainContent .ourAdvantage h3 {
+          text-align: center;
+          font-size: 2rem;
+          margin-bottom: 2rem;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold; }
+        body main #mainContent .ourAdvantage .description {
+          margin-top: 0.5rem;
+          margin-bottom: 2.5rem; }
+          body main #mainContent .ourAdvantage .description h4 {
+            font-size: 1.45rem;
+            font-family: 'Comfortaa', cursive;
+            font-weight: bold; }
+          body main #mainContent .ourAdvantage .description p {
+            margin-top: 0.5rem;
+            margin-left: 20px;
+            font-size: 1.1rem;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.4; }
+    body main footer {
+      width: 100%;
+      height: 4rem;
+      background-color: grey; }
+
+/*# sourceMappingURL=style.css.map */
