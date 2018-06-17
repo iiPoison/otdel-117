@@ -2,7 +2,7 @@
   font-size: 1.45rem;
   font-family: 'Comfortaa', cursive;
   font-weight: bold;
-  color: #58A9F7;
+  color: #886288;
 }
 
 @mixin descriptionParagraf {
@@ -11,7 +11,7 @@
   font-size: 1.1rem;
   font-family: 'Roboto', sans-serif;
   line-height: 1.4;
-  color: #58A9F7;
+  color: #886288;
 }
 
 body {
@@ -20,79 +20,75 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  /*background-color: #C9D5ED;*/
-  background-image: url("../img/background.jpg");
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  main {
-    max-width: 65rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    #header {
+  background-color: #15141f;
+  header {
+    display: fixed;
+    color: #886288;
+    .devider {
+      width: 70rem;
       display: flex;
-      flex-direction: row;
-      justify-content:space-between;
-      margin-top: 2rem;
-      border-bottom: 2px solid black;
-      padding-bottom: 1rem;
-      .mainLogo {
-        h2 {
-          font-size: 3.5rem;
-          font-family: 'Poiret One', cursive;
-          letter-spacing: 7px;
-          margin-bottom: 0.4rem;
-          color: #58A9F7;
-        }
-        .telephone {
-          font-size: 2rem;
-          font-family: 'Poiret One', cursive;
-          color: #58A9F7;
-        }
-      }
-      .secondLogo {
-        .slogan {
-          margin-top: 1.5rem;
-          font-size: 1.4rem;
-          font-family: 'Roboto', sans-serif;
-          color: #58A9F7;
-        }
-        .promoQuestion {
-          font-size: 2rem;
-          font-family: 'Roboto', sans-serif;
-          color: #58A9F7;
-        }
-      }
-    }
-    #topNav {
-      width: 100%;
+      flex-direction: column;
       margin-top: 1rem;
-      padding-bottom: 1rem;
-      border-bottom: 2px solid black;
-      ul {
+      .topSection {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        li {
-          a {
-            font-family: 'Open Sans', sans-serif;
-            text-decoration: none;
+        border-bottom: 1px solid #886288;
+        justify-content: space-between;
+        .logo {
+          h2 {
+            font-family: 'Poiret One', cursive;
+            font-size: 4rem;
             font-weight: bold;
-            font-size: 1.5rem;
-            color: #58A9F7;
+          }
+          h1 {
+            font-family: 'Poiret One', cursive;
+            font-size: 1.85rem;
+            font-weight: bold;
+          }
+
+        }
+        .telephone {
+          margin-top: 0.4rem;
+          h3 {
+            font-family: 'Comfortaa', cursive;
+            font-size: 1.4rem;
+          }
+          h4 {
+            margin-top: 0.4rem;
+            font-family: 'Comfortaa', cursive;
+            font-size: 1.9rem;
+          }
+        }
+      }
+
+      .bottomSection {
+        ul {
+          display: flex;
+          justify-content: space-around;
+          li {
+            display: inline-block;
+            a {
+              color: #f27927;
+              text-decoration: none;
+            }
           }
         }
       }
     }
-    #mainContent {
-      width: 100%;
-      margin-top: 2rem;
+  } //end header
+  #scope {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    .devider {
+      width: 70rem;
       display: flex;
       flex-direction: row;
+      margin-top: 1rem;
+      justify-content: space-between;
       .ourAbility { /* слева */
-        width: 50%;
+        width: 45%;
         display: flex;
         flex-direction: column;
         h3  {
@@ -101,6 +97,7 @@ body {
           margin-bottom: 2rem;
           font-weight: bold;
           font-family: 'Open Sans', sans-serif;
+          color: #886288;
         }
         .description {
           margin-top: 0.5rem;
@@ -114,7 +111,7 @@ body {
         }
       }
       .ourAdvantage { /* справа */
-        width: 50%;
+        width: 45%;
         display: flex;
         flex-direction: column;
         h3  {
@@ -123,6 +120,7 @@ body {
           margin-bottom: 2rem;
           font-family: 'Open Sans', sans-serif;
           font-weight: bold;
+          color: #886288;
         }
         .description {
           margin-top: 0.5rem;
@@ -136,10 +134,119 @@ body {
         }
       }
     }
-    footer {
-      width: 100%;
-      height: 4rem;
-      background-color: #2E4A87;
-    }
-  }
+  } // end #scope
+  #servicesAndPrices {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    .devider {
+      width: 70rem;
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem;
+      .packageSolution {
+        width: 40%;
+        h3 {
+          font-size: 2rem;
+          text-align: center;
+          margin-bottom: 2rem;
+          font-weight: bold;
+          font-family: 'Open Sans', sans-serif;
+          color: #886288;
+        }
+        .solutionBox {
+          border-radius: 20px;
+          background-color: #00BFFF;
+          width: auto;
+          margin: 0 1.5rem;
+          margin-bottom: 2.5rem;
+          color: #0A3055;
+          font-family: 'Open Sans', sans-serif;
+          h4 {
+            text-align: center;
+            padding-top: 1.5rem;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            font-weight: bold;
+          }
+          ul {
+            li {
+              margin-left: 2rem;
+              &:first-child {
+                margin-left: 1rem;
+                padding-bottom: 0.4rem;
+                font-weight: bold;
+
+              }
+            }
+
+          }
+          p {
+            text-align: center;
+            margin-top: 2rem;
+            padding-bottom: 2.5rem;
+            font-size: 2rem;
+            font-weight: bold;
+          }
+        }
+
+
+      } // end packageSolution
+      .miniPrice {
+        width: 60%;
+        h3 {
+          font-size: 2rem;
+          text-align: center;
+          margin-bottom: 2rem;
+          font-weight: bold;
+          font-family: 'Open Sans', sans-serif;
+          color: #886288;
+        }
+
+        table {
+          margin-bottom: 3rem;
+          font-family: 'Open Sans', sans-serif;
+          color: #886288;
+          width: 100%;
+          thead {
+            tr {
+              //background-color: #7bacdd;
+              padding-bottom: 1rem;
+              th {
+                font-size: 1.6rem;
+                text-align: left;
+              }
+            }
+          }
+
+          tbody {
+            font-size: 1.1rem;
+            tr {
+              background-color: #080714;
+              line-height: 1.4rem;
+
+              td {
+                border: 2px solid #15141f;
+                padding: 0.1rem;
+                &:nth-child(2){
+                  text-align: right;
+                  width: 20%;
+                }
+              }
+              &:nth-child(2n) {
+                //background-color: #080714;
+              }
+            }
+          }
+          tfoot {
+            color: #b200fd;
+            tr {
+
+            }
+          }
+        } // end table
+      } // end miniPrice
+    } // end .devider
+  } // end #servicesAndPrices
 }

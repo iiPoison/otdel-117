@@ -5,118 +5,186 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  /*background-color: #C9D5ED;*/
-  background-image: url("../img/background.jpg");
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat; }
-  body main {
-    max-width: 65rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column; }
-    body main #header {
+  background-color: #15141f; }
+  body header {
+    display: fixed;
+    color: #886288; }
+    body header .devider {
+      width: 70rem;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-top: 2rem;
-      border-bottom: 2px solid black;
-      padding-bottom: 1rem; }
-      body main #header .mainLogo h2 {
-        font-size: 3.5rem;
-        font-family: 'Poiret One', cursive;
-        letter-spacing: 7px;
-        margin-bottom: 0.4rem;
-        color: #58A9F7; }
-      body main #header .mainLogo .telephone {
-        font-size: 2rem;
-        font-family: 'Poiret One', cursive;
-        color: #58A9F7; }
-      body main #header .secondLogo .slogan {
-        margin-top: 1.5rem;
-        font-size: 1.4rem;
-        font-family: 'Roboto', sans-serif;
-        color: #58A9F7; }
-      body main #header .secondLogo .promoQuestion {
-        font-size: 2rem;
-        font-family: 'Roboto', sans-serif;
-        color: #58A9F7; }
-    body main #topNav {
-      width: 100%;
-      margin-top: 1rem;
-      padding-bottom: 1rem;
-      border-bottom: 2px solid black; }
-      body main #topNav ul {
+      flex-direction: column;
+      margin-top: 1rem; }
+      body header .devider .topSection {
         display: flex;
         flex-direction: row;
+        border-bottom: 1px solid #886288;
+        justify-content: space-between; }
+        body header .devider .topSection .logo h2 {
+          font-family: 'Poiret One', cursive;
+          font-size: 4rem;
+          font-weight: bold; }
+        body header .devider .topSection .logo h1 {
+          font-family: 'Poiret One', cursive;
+          font-size: 1.85rem;
+          font-weight: bold; }
+        body header .devider .topSection .telephone {
+          margin-top: 0.4rem; }
+          body header .devider .topSection .telephone h3 {
+            font-family: 'Comfortaa', cursive;
+            font-size: 1.4rem; }
+          body header .devider .topSection .telephone h4 {
+            margin-top: 0.4rem;
+            font-family: 'Comfortaa', cursive;
+            font-size: 1.9rem; }
+      body header .devider .bottomSection ul {
+        display: flex;
         justify-content: space-around; }
-        body main #topNav ul li a {
-          font-family: 'Open Sans', sans-serif;
-          text-decoration: none;
-          font-weight: bold;
-          font-size: 1.5rem;
-          color: #58A9F7; }
-    body main #mainContent {
-      width: 100%;
-      margin-top: 2rem;
+        body header .devider .bottomSection ul li {
+          display: inline-block; }
+          body header .devider .bottomSection ul li a {
+            color: #f27927;
+            text-decoration: none; }
+  body #scope {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row; }
+    body #scope .devider {
+      width: 70rem;
       display: flex;
-      flex-direction: row; }
-      body main #mainContent .ourAbility {
+      flex-direction: row;
+      margin-top: 1rem;
+      justify-content: space-between; }
+      body #scope .devider .ourAbility {
         /* ╤Б╨╗╨╡╨▓╨░ */
-        width: 50%;
+        width: 45%;
         display: flex;
         flex-direction: column; }
-        body main #mainContent .ourAbility h3 {
+        body #scope .devider .ourAbility h3 {
           font-size: 2rem;
           text-align: center;
           margin-bottom: 2rem;
           font-weight: bold;
-          font-family: 'Open Sans', sans-serif; }
-        body main #mainContent .ourAbility .description {
+          font-family: 'Open Sans', sans-serif;
+          color: #886288; }
+        body #scope .devider .ourAbility .description {
           margin-top: 0.5rem;
           margin-bottom: 1.5rem; }
-          body main #mainContent .ourAbility .description h4 {
+          body #scope .devider .ourAbility .description h4 {
             font-size: 1.45rem;
             font-family: 'Comfortaa', cursive;
             font-weight: bold;
-            color: #58A9F7; }
-          body main #mainContent .ourAbility .description p {
+            color: #886288; }
+          body #scope .devider .ourAbility .description p {
             margin-top: 0.5rem;
             margin-left: 20px;
             font-size: 1.1rem;
             font-family: 'Roboto', sans-serif;
             line-height: 1.4;
-            color: #58A9F7; }
-      body main #mainContent .ourAdvantage {
+            color: #886288; }
+      body #scope .devider .ourAdvantage {
         /* ╤Б╨┐╤А╨░╨▓╨░ */
-        width: 50%;
+        width: 45%;
         display: flex;
         flex-direction: column; }
-        body main #mainContent .ourAdvantage h3 {
+        body #scope .devider .ourAdvantage h3 {
           text-align: center;
           font-size: 2rem;
           margin-bottom: 2rem;
           font-family: 'Open Sans', sans-serif;
-          font-weight: bold; }
-        body main #mainContent .ourAdvantage .description {
+          font-weight: bold;
+          color: #886288; }
+        body #scope .devider .ourAdvantage .description {
           margin-top: 0.5rem;
           margin-bottom: 2.5rem; }
-          body main #mainContent .ourAdvantage .description h4 {
+          body #scope .devider .ourAdvantage .description h4 {
             font-size: 1.45rem;
             font-family: 'Comfortaa', cursive;
             font-weight: bold;
-            color: #58A9F7; }
-          body main #mainContent .ourAdvantage .description p {
+            color: #886288; }
+          body #scope .devider .ourAdvantage .description p {
             margin-top: 0.5rem;
             margin-left: 20px;
             font-size: 1.1rem;
             font-family: 'Roboto', sans-serif;
             line-height: 1.4;
-            color: #58A9F7; }
-    body main footer {
-      width: 100%;
-      height: 4rem;
-      background-color: #2E4A87; }
+            color: #886288; }
+  body #servicesAndPrices {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row; }
+    body #servicesAndPrices .devider {
+      width: 70rem;
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem; }
+      body #servicesAndPrices .devider .packageSolution {
+        width: 40%; }
+        body #servicesAndPrices .devider .packageSolution h3 {
+          font-size: 2rem;
+          text-align: center;
+          margin-bottom: 2rem;
+          font-weight: bold;
+          font-family: 'Open Sans', sans-serif;
+          color: #886288; }
+        body #servicesAndPrices .devider .packageSolution .solutionBox {
+          border-radius: 20px;
+          background-color: #00BFFF;
+          width: auto;
+          margin: 0 1.5rem;
+          margin-bottom: 2.5rem;
+          color: #0A3055;
+          font-family: 'Open Sans', sans-serif; }
+          body #servicesAndPrices .devider .packageSolution .solutionBox h4 {
+            text-align: center;
+            padding-top: 1.5rem;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            font-weight: bold; }
+          body #servicesAndPrices .devider .packageSolution .solutionBox ul li {
+            margin-left: 2rem; }
+            body #servicesAndPrices .devider .packageSolution .solutionBox ul li:first-child {
+              margin-left: 1rem;
+              padding-bottom: 0.4rem;
+              font-weight: bold; }
+          body #servicesAndPrices .devider .packageSolution .solutionBox p {
+            text-align: center;
+            margin-top: 2rem;
+            padding-bottom: 2.5rem;
+            font-size: 2rem;
+            font-weight: bold; }
+      body #servicesAndPrices .devider .miniPrice {
+        width: 60%; }
+        body #servicesAndPrices .devider .miniPrice h3 {
+          font-size: 2rem;
+          text-align: center;
+          margin-bottom: 2rem;
+          font-weight: bold;
+          font-family: 'Open Sans', sans-serif;
+          color: #886288; }
+        body #servicesAndPrices .devider .miniPrice table {
+          margin-bottom: 3rem;
+          font-family: 'Open Sans', sans-serif;
+          color: #886288;
+          width: 100%; }
+          body #servicesAndPrices .devider .miniPrice table thead tr {
+            padding-bottom: 1rem; }
+            body #servicesAndPrices .devider .miniPrice table thead tr th {
+              font-size: 1.6rem;
+              text-align: left; }
+          body #servicesAndPrices .devider .miniPrice table tbody {
+            font-size: 1.1rem; }
+            body #servicesAndPrices .devider .miniPrice table tbody tr {
+              background-color: #080714;
+              line-height: 1.4rem; }
+              body #servicesAndPrices .devider .miniPrice table tbody tr td {
+                border: 2px solid #15141f;
+                padding: 0.1rem; }
+                body #servicesAndPrices .devider .miniPrice table tbody tr td:nth-child(2) {
+                  text-align: right;
+                  width: 20%; }
+          body #servicesAndPrices .devider .miniPrice table tfoot {
+            color: #b200fd; }
 
 /*# sourceMappingURL=style.css.map */
