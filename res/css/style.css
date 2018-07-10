@@ -1,195 +1,209 @@
-@charset "UTF-8";
 body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif; }
+
+#particles-js {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #222629;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+
+#top-header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #181C1F;
+  height: 5rem;
+  display: flex;
+  justify-content: center; }
+  #top-header .devider {
+    width: 70rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    #top-header .devider .main-logo {
+      display: flex;
+      flex-direction: row; }
+      #top-header .devider .main-logo .logo {
+        border: 3px solid #FFA500; }
+        #top-header .devider .main-logo .logo h2 {
+          display: inline-block;
+          text-transform: uppercase;
+          color: #FFA500;
+          font-size: 2rem;
+          padding: 0.75rem; }
+      #top-header .devider .main-logo .slogan {
+        color: #E3E3E3;
+        margin-left: 0.75rem; }
+        #top-header .devider .main-logo .slogan li {
+          margin: 0.25rem 0; }
+    #top-header .devider .main-nav ul li {
+      display: inline-block;
+      margin: 0 0.5rem; }
+      #top-header .devider .main-nav ul li a {
+        color: #E7F1D9;
+        text-decoration: none; }
+
+#content-wrapper {
+  position: relative;
+  z-index: 2;
+  top: 5rem;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  background-color: #15141f; }
-  body header {
-    position: fixed;
-    top: 0rem;
-    z-index: 20;
-    color: #886288;
-    background-color: #15141f; }
-    body header .devider {
-      width: 70rem;
-      display: flex;
-      flex-direction: column;
-      margin-top: 1rem; }
-      body header .devider .topSection {
+  align-items: center; }
+  #content-wrapper .devider {
+    width: 70rem;
+    background-color: rgba(34, 38, 41, 0.7); }
+    #content-wrapper .devider #presentation {
+      margin-top: 2rem; }
+      #content-wrapper .devider #presentation .double-block {
+        width: 100%;
+        height: auto;
         display: flex;
-        flex-direction: row;
-        border-bottom: 1px solid #886288;
-        justify-content: space-between; }
-        body header .devider .topSection .logo h2 {
-          font-family: 'Poiret One', cursive;
-          font-size: 4rem;
-          font-weight: bold; }
-        body header .devider .topSection .logo h1 {
-          font-family: 'Poiret One', cursive;
-          font-size: 1.85rem;
-          font-weight: bold; }
-        body header .devider .topSection .telephone {
-          margin-top: 0.4rem; }
-          body header .devider .topSection .telephone h3 {
-            font-family: 'Comfortaa', cursive;
-            font-size: 1.4rem; }
-          body header .devider .topSection .telephone h4 {
-            margin-top: 0.4rem;
-            font-family: 'Comfortaa', cursive;
-            font-size: 1.9rem; }
-      body header .devider .bottomSection ul {
-        display: flex;
-        justify-content: space-around; }
-        body header .devider .bottomSection ul li {
-          display: inline-block; }
-          body header .devider .bottomSection ul li a {
-            color: #f27927;
-            text-decoration: none; }
-  body main {
-    margin-top: 10rem; }
-    body main #scope {
+        flex-direction: row; }
+        #content-wrapper .devider #presentation .double-block .left-block-presentation {
+          width: 50%; }
+          #content-wrapper .devider #presentation .double-block .left-block-presentation .segment-presentation {
+            margin-bottom: 2rem; }
+            #content-wrapper .devider #presentation .double-block .left-block-presentation .segment-presentation h3 {
+              color: orange;
+              font-size: 2rem;
+              margin-bottom: 0.75rem;
+              margin-left: 0.5rem; }
+            #content-wrapper .devider #presentation .double-block .left-block-presentation .segment-presentation p {
+              color: #7e8793;
+              margin: 0 0.5rem;
+              line-height: 1.5; }
+        #content-wrapper .devider #presentation .double-block .right-block-presentation {
+          width: 50%; }
+          #content-wrapper .devider #presentation .double-block .right-block-presentation .segment-presentation {
+            margin-bottom: 2rem; }
+            #content-wrapper .devider #presentation .double-block .right-block-presentation .segment-presentation h3 {
+              color: orange;
+              font-size: 2rem;
+              margin-bottom: 0.75rem;
+              margin-left: 0.5rem; }
+            #content-wrapper .devider #presentation .double-block .right-block-presentation .segment-presentation p {
+              color: #7e8793;
+              margin: 0 0.5rem;
+              line-height: 1.5; }
+    #content-wrapper .devider .just-line {
       width: 100%;
-      margin-top: 2rem;
+      margin: 2rem 0;
+      border-bottom: 2px solid rgba(28, 28, 31, 0.5); }
+    #content-wrapper .devider #price .double-block {
+      width: 100%;
+      height: auto;
       display: flex;
       flex-direction: row; }
-      body main #scope .devider {
-        width: 70rem;
-        display: flex;
-        flex-direction: row;
-        margin-top: 1rem;
-        justify-content: space-between; }
-        body main #scope .devider .ourAbility {
-          /* ╤Б╨╗╨╡╨▓╨░ */
-          width: 45%;
-          display: flex;
-          flex-direction: column; }
-          body main #scope .devider .ourAbility h3 {
-            font-size: 2rem;
+      #content-wrapper .devider #price .double-block .package-solution {
+        width: 45%; }
+        #content-wrapper .devider #price .double-block .package-solution h3 {
+          font-size: 2rem;
+          text-align: center;
+          margin-bottom: 2rem;
+          color: #8ac832; }
+        #content-wrapper .devider #price .double-block .package-solution .solutionBox {
+          border-radius: 20px;
+          background-color: #00BFFF;
+          width: auto;
+          margin: 0 1.5rem;
+          margin-bottom: 2.5rem;
+          color: #0A3055;
+          font-family: 'Open Sans', sans-serif; }
+          #content-wrapper .devider #price .double-block .package-solution .solutionBox h4 {
             text-align: center;
+            padding-top: 1.5rem;
             margin-bottom: 2rem;
-            font-weight: bold;
-            font-family: 'Open Sans', sans-serif;
-            color: #886288; }
-          body main #scope .devider .ourAbility .description {
-            margin-top: 0.5rem;
-            margin-bottom: 1.5rem; }
-            body main #scope .devider .ourAbility .description h4 {
-              font-size: 1.45rem;
-              font-family: 'Comfortaa', cursive;
-              font-weight: bold;
-              color: #886288; }
-            body main #scope .devider .ourAbility .description p {
-              margin-top: 0.5rem;
-              margin-left: 20px;
-              font-size: 1.1rem;
-              font-family: 'Roboto', sans-serif;
-              line-height: 1.4;
-              color: #886288; }
-        body main #scope .devider .ourAdvantage {
-          /* ╤Б╨┐╤А╨░╨▓╨░ */
-          width: 45%;
-          display: flex;
-          flex-direction: column; }
-          body main #scope .devider .ourAdvantage h3 {
-            text-align: center;
             font-size: 2rem;
-            margin-bottom: 2rem;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: bold;
-            color: #886288; }
-          body main #scope .devider .ourAdvantage .description {
-            margin-top: 0.5rem;
-            margin-bottom: 2.5rem; }
-            body main #scope .devider .ourAdvantage .description h4 {
-              font-size: 1.45rem;
-              font-family: 'Comfortaa', cursive;
-              font-weight: bold;
-              color: #886288; }
-            body main #scope .devider .ourAdvantage .description p {
-              margin-top: 0.5rem;
-              margin-left: 20px;
-              font-size: 1.1rem;
-              font-family: 'Roboto', sans-serif;
-              line-height: 1.4;
-              color: #886288; }
-    body main #servicesAndPrices {
-      width: 100%;
-      margin-top: 2rem;
-      display: flex;
-      flex-direction: row; }
-      body main #servicesAndPrices .devider {
-        width: 70rem;
-        display: flex;
-        flex-direction: row;
-        margin-top: 1rem; }
-        body main #servicesAndPrices .devider .packageSolution {
-          width: 40%; }
-          body main #servicesAndPrices .devider .packageSolution h3 {
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 2rem;
-            font-weight: bold;
-            font-family: 'Open Sans', sans-serif;
-            color: #886288; }
-          body main #servicesAndPrices .devider .packageSolution .solutionBox {
-            border-radius: 20px;
-            background-color: #00BFFF;
-            width: auto;
-            margin: 0 1.5rem;
-            margin-bottom: 2.5rem;
-            color: #0A3055;
-            font-family: 'Open Sans', sans-serif; }
-            body main #servicesAndPrices .devider .packageSolution .solutionBox h4 {
-              text-align: center;
-              padding-top: 1.5rem;
-              margin-bottom: 2rem;
-              font-size: 2rem;
+            font-weight: bold; }
+          #content-wrapper .devider #price .double-block .package-solution .solutionBox ul li {
+            margin-left: 2rem; }
+            #content-wrapper .devider #price .double-block .package-solution .solutionBox ul li:first-child {
+              margin-left: 1rem;
+              padding-bottom: 0.4rem;
               font-weight: bold; }
-            body main #servicesAndPrices .devider .packageSolution .solutionBox ul li {
-              margin-left: 2rem; }
-              body main #servicesAndPrices .devider .packageSolution .solutionBox ul li:first-child {
-                margin-left: 1rem;
-                padding-bottom: 0.4rem;
-                font-weight: bold; }
-            body main #servicesAndPrices .devider .packageSolution .solutionBox p {
-              text-align: center;
-              margin-top: 2rem;
-              padding-bottom: 2.5rem;
-              font-size: 2rem;
-              font-weight: bold; }
-        body main #servicesAndPrices .devider .miniPrice {
-          width: 60%; }
-          body main #servicesAndPrices .devider .miniPrice h3 {
-            font-size: 2rem;
+          #content-wrapper .devider #price .double-block .package-solution .solutionBox p {
             text-align: center;
-            margin-bottom: 2rem;
-            font-weight: bold;
-            font-family: 'Open Sans', sans-serif;
-            color: #886288; }
-          body main #servicesAndPrices .devider .miniPrice table {
-            margin-bottom: 3rem;
-            font-family: 'Open Sans', sans-serif;
-            color: #886288;
-            width: 100%; }
-            body main #servicesAndPrices .devider .miniPrice table thead tr {
-              padding-bottom: 1rem; }
-              body main #servicesAndPrices .devider .miniPrice table thead tr th {
-                font-size: 1.6rem;
-                text-align: left; }
-            body main #servicesAndPrices .devider .miniPrice table tbody {
-              font-size: 1.1rem; }
-              body main #servicesAndPrices .devider .miniPrice table tbody tr {
-                background-color: #080714;
-                line-height: 1.4rem; }
-                body main #servicesAndPrices .devider .miniPrice table tbody tr td {
-                  border: 2px solid #15141f;
-                  padding: 0.1rem; }
-                  body main #servicesAndPrices .devider .miniPrice table tbody tr td:nth-child(2) {
-                    text-align: right;
-                    width: 20%; }
-            body main #servicesAndPrices .devider .miniPrice table tfoot {
-              color: #b200fd; }
+            margin-top: 2rem;
+            padding-bottom: 2.5rem;
+            font-size: 2rem;
+            font-weight: bold; }
+      #content-wrapper .devider #price .double-block .cost-services {
+        width: 55%;
+        margin-right: 1rem; }
+        #content-wrapper .devider #price .double-block .cost-services h3 {
+          font-size: 2rem;
+          text-align: center;
+          margin-bottom: 2rem;
+          color: #8ac832; }
+        #content-wrapper .devider #price .double-block .cost-services table {
+          margin-bottom: 3rem;
+          color: #7e8793;
+          width: 100%; }
+          #content-wrapper .devider #price .double-block .cost-services table thead tr {
+            padding-bottom: 1rem; }
+            #content-wrapper .devider #price .double-block .cost-services table thead tr th {
+              font-size: 1.6rem;
+              text-align: left; }
+          #content-wrapper .devider #price .double-block .cost-services table tbody {
+            font-size: 1rem; }
+            #content-wrapper .devider #price .double-block .cost-services table tbody tr {
+              background-color: rgba(13, 22, 29, 0.4);
+              line-height: 1.4rem; }
+              #content-wrapper .devider #price .double-block .cost-services table tbody tr td {
+                padding: 0.2rem;
+                border: 2px solid rgba(34, 38, 41, 0.7); }
+                #content-wrapper .devider #price .double-block .cost-services table tbody tr td:nth-child(2) {
+                  text-align: right;
+                  width: 20%; }
+          #content-wrapper .devider #price .double-block .cost-services table tfoot {
+            color: #8ac832;
+            font-size: 0.9rem; }
+        #content-wrapper .devider #price .double-block .cost-services .cost-discription {
+          margin-bottom: 2rem; }
+          #content-wrapper .devider #price .double-block .cost-services .cost-discription p {
+            color: #8ac832;
+            font-size: 0.9rem; }
+  #content-wrapper footer {
+    width: 100%;
+    font-family: 'Fenix', serif;
+    height: 15rem;
+    background-color: #181C1F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    #content-wrapper footer .contact ul li {
+      display: inline-block;
+      margin: 0 1rem;
+      font-size: 1.1rem;
+      color: #858589; }
+    #content-wrapper footer .copyright {
+      margin-top: 1.5rem;
+      border-top: 1px solid #636366; }
+      #content-wrapper footer .copyright ul {
+        padding: 1rem;
+        font-size: 1.1rem;
+        color: #858589; }
+        #content-wrapper footer .copyright ul li {
+          text-align: center;
+          padding: 0.50rem; }
+          #content-wrapper footer .copyright ul li a {
+            text-decoration: underline;
+            color: deepskyblue; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style2.css.map */

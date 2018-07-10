@@ -1,165 +1,151 @@
-@mixin descriptionHeader {
-  font-size: 1.45rem;
-  font-family: 'Comfortaa', cursive;
-  font-weight: bold;
-  color: #886288;
+@mixin segmentPresentation {
+  .segment-presentation {
+    margin-bottom: 2rem;
+    h3 {
+      color: orange;
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      margin-left: 0.5rem;
+
+    }
+    p {
+      color: #7e8793;
+      margin: 0 0.5rem;
+      line-height: 1.5;
+    }
+  }
 }
 
-@mixin descriptionParagraf {
-  margin-top: 0.5rem;
-  margin-left: 20px;
-  font-size: 1.1rem;
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.4;
-  color: #886288;
+@mixin justLine {
+  .just-line {
+    width: 100%;
+    margin: 2rem 0;
+    border-bottom: 2px solid rgba(28, 28, 31, 0.5);
+  }
+}
+
+@mixin doubleBlock {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 0;
+  padding: 0;
   font-size: 16px;
-  background-color: #15141f;
-  header {
-    position:fixed;
-    top: 0rem;
-    z-index: 20;
-    color: #886288;
-    background-color: #15141f;
-    .devider {
-      width: 70rem;
-      display: flex;
-      flex-direction: column;
-      margin-top: 1rem;
-      .topSection {
-        display: flex;
-        flex-direction: row;
-        border-bottom: 1px solid #886288;
-        justify-content: space-between;
-        .logo {
-          h2 {
-            font-family: 'Poiret One', cursive;
-            font-size: 4rem;
-            font-weight: bold;
-          }
-          h1 {
-            font-family: 'Poiret One', cursive;
-            font-size: 1.85rem;
-            font-weight: bold;
-          }
+  font-family: 'Open Sans', sans-serif;
+}
 
+//для визуального конфига https://vincentgarreau.com/particles.js/
+#particles-js{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #222629;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+#top-header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #181C1F;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  .devider {
+    width: 70rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .main-logo {
+      display: flex;
+      flex-direction: row;
+      .logo {
+        border: 3px solid #FFA500;
+        h2 {
+          display: inline-block;
+          text-transform: uppercase;
+          color: #FFA500;
+          font-size: 2rem;
+          padding: 0.75rem;
         }
-        .telephone {
-          margin-top: 0.4rem;
-          h3 {
-            font-family: 'Comfortaa', cursive;
-            font-size: 1.4rem;
-          }
-          h4 {
-            margin-top: 0.4rem;
-            font-family: 'Comfortaa', cursive;
-            font-size: 1.9rem;
-          }
+      }
+      .slogan {
+        color: #E3E3E3;
+        margin-left: 0.75rem;
+        li {
+          margin: 0.25rem 0;
         }
       }
 
-      .bottomSection {
-        ul {
-          display: flex;
-          justify-content: space-around;
-          li {
-            display: inline-block;
-            a {
-              color: #f27927;
-              text-decoration: none;
-            }
+    }
+    .main-nav {
+      ul {
+
+        li {
+          display: inline-block;
+          margin: 0 0.5rem;
+          a {
+            color: #E7F1D9;
+            text-decoration: none;
           }
         }
       }
     }
-  } //end header
-  main {
-    margin-top: 10rem;
-    #scope {
+  }
+}
 
-      width: 100%;
+#content-wrapper {
+  position: relative;
+  z-index: 2;
+  top: 5rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .devider {
+    width: 70rem;
+    background-color: rgba(34, 38, 41, 0.7);
+    #presentation {
       margin-top: 2rem;
-      display: flex;
-      flex-direction: row;
-      .devider {
-        width: 70rem;
-        display: flex;
-        flex-direction: row;
-        margin-top: 1rem;
-        justify-content: space-between;
-        .ourAbility { /* слева */
-          width: 45%;
-          display: flex;
-          flex-direction: column;
-          h3  {
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 2rem;
-            font-weight: bold;
-            font-family: 'Open Sans', sans-serif;
-            color: #886288;
-          }
-          .description {
-            margin-top: 0.5rem;
-            margin-bottom: 1.5rem;
-            h4  {
-              @include descriptionHeader;
-            }
-            p {
-              @include descriptionParagraf;
-            }
-          }
+      .double-block {
+        @include doubleBlock;
+        .left-block-presentation {
+          width: 50%;
+          @include segmentPresentation;
         }
-        .ourAdvantage { /* справа */
-          width: 45%;
-          display: flex;
-          flex-direction: column;
-          h3  {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: bold;
-            color: #886288;
-          }
-          .description {
-            margin-top: 0.5rem;
-            margin-bottom: 2.5rem;
-            h4  {
-              @include descriptionHeader;
-            }
-            p {
-              @include descriptionParagraf;
-            }
-          }
+
+        .right-block-presentation {
+          width: 50%;
+          @include segmentPresentation;
         }
       }
-    } // end #scope
-    #servicesAndPrices {
-      width: 100%;
-      margin-top: 2rem;
-      display: flex;
-      flex-direction: row;
-      .devider {
-        width: 70rem;
-        display: flex;
-        flex-direction: row;
-        margin-top: 1rem;
-        .packageSolution {
-          width: 40%;
+    }
+
+    @include justLine;
+
+    #price {
+      .double-block {
+        @include doubleBlock;
+        .package-solution {
+          width: 45%;
           h3 {
             font-size: 2rem;
             text-align: center;
             margin-bottom: 2rem;
-            font-weight: bold;
-            font-family: 'Open Sans', sans-serif;
-            color: #886288;
+            color: #8ac832;
           }
           .solutionBox {
             border-radius: 20px;
@@ -183,10 +169,8 @@ body {
                   margin-left: 1rem;
                   padding-bottom: 0.4rem;
                   font-weight: bold;
-
                 }
               }
-
             }
             p {
               text-align: center;
@@ -197,28 +181,26 @@ body {
             }
           }
 
+        }
 
-        } // end packageSolution
-        .miniPrice {
-          width: 60%;
+        .cost-services {
+          width: 55%;
+          margin-right: 1rem;
           h3 {
             font-size: 2rem;
             text-align: center;
             margin-bottom: 2rem;
-            font-weight: bold;
-            font-family: 'Open Sans', sans-serif;
-            color: #886288;
+            color: #8ac832;
           }
-
           table {
             margin-bottom: 3rem;
-            font-family: 'Open Sans', sans-serif;
-            color: #886288;
+            color: #7e8793;
             width: 100%;
             thead {
+
               tr {
-                //background-color: #7bacdd;
                 padding-bottom: 1rem;
+
                 th {
                   font-size: 1.6rem;
                   text-align: left;
@@ -227,33 +209,75 @@ body {
             }
 
             tbody {
-              font-size: 1.1rem;
+              font-size: 1rem;
               tr {
-                background-color: #080714;
+                background-color: rgba(13, 22, 29, 0.4);
                 line-height: 1.4rem;
 
                 td {
-                  border: 2px solid #15141f;
-                  padding: 0.1rem;
+                  padding: 0.2rem;
+                  border: 2px solid rgba(34, 38, 41, 0.7);
                   &:nth-child(2){
                     text-align: right;
                     width: 20%;
                   }
                 }
-                &:nth-child(2n) {
-                  //background-color: #080714;
-                }
               }
             }
             tfoot {
-              color: #b200fd;
+              color: #8ac832;
+              font-size: 0.9rem;
               tr {
 
               }
             }
           } // end table
-        } // end miniPrice
-      } // end .devider
-    } // end #servicesAndPrices
-  } // end main
+          .cost-discription {
+            margin-bottom: 2rem;
+            p {
+              color: #8ac832;
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    font-family: 'Fenix', serif;
+    height: 15rem;
+    background-color: #181C1F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .contact {
+      ul {
+        li {
+          display: inline-block;
+          margin: 0 1rem;
+          font-size: 1.1rem;
+          color: #858589;
+        }
+      }
+    }
+    .copyright {
+      margin-top: 1.5rem;
+      border-top: 1px solid #636366;
+      ul {
+        padding: 1rem;
+        font-size: 1.1rem;
+        color: #858589;
+        li {
+          text-align: center;
+          padding: 0.50rem;
+          a {
+            text-decoration: underline;
+            color: deepskyblue;
+          }
+        }
+      }
+    }
+  }
 }
