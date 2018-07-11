@@ -1,3 +1,7 @@
+.important-blue {
+  color: deepskyblue;
+  font-size: 1.1rem; }
+
 body {
   margin: 0;
   padding: 0;
@@ -50,10 +54,29 @@ body {
           margin: 0.25rem 0; }
     #top-header .devider .main-nav ul li {
       display: inline-block;
-      margin: 0 0.5rem; }
+      margin: 0 0.5rem;
+      padding: 0.75rem;
+      background-color: #11181E;
+      transition-property: background-color;
+      transition-delay: 0;
+      transition-duration: 300ms;
+      transition-timing-function: ease; }
       #top-header .devider .main-nav ul li a {
         color: #E7F1D9;
-        text-decoration: none; }
+        text-decoration: none;
+        font-weight: bold;
+        transition-property: color;
+        transition-delay: 0;
+        transition-duration: 300ms;
+        transition-timing-function: ease; }
+      #top-header .devider .main-nav ul li:hover {
+        background-color: #FFA500; }
+        #top-header .devider .main-nav ul li:hover a {
+          color: #05182A; }
+      #top-header .devider .main-nav ul li:nth-child(4) {
+        background-color: #8AC832; }
+        #top-header .devider .main-nav ul li:nth-child(4) a {
+          color: #05182A; }
 
 #content-wrapper {
   position: relative;
@@ -100,9 +123,10 @@ body {
               color: #7e8793;
               margin: 0 0.5rem;
               line-height: 1.5; }
-    #content-wrapper .devider .just-line {
+    #content-wrapper .devider #just-line {
       width: 100%;
-      margin: 2rem 0;
+      margin-top: 2rem;
+      margin-bottom: 6.5rem;
       border-bottom: 2px solid rgba(28, 28, 31, 0.5); }
     #content-wrapper .devider #price .double-block {
       width: 100%;
@@ -117,13 +141,11 @@ body {
           margin-bottom: 2rem;
           color: #8ac832; }
         #content-wrapper .devider #price .double-block .package-solution .solutionBox {
-          border-radius: 20px;
-          background-color: #00BFFF;
+          background-color: rgba(24, 28, 31, 0.5);
           width: auto;
           margin: 0 1.5rem;
           margin-bottom: 2.5rem;
-          color: #0A3055;
-          font-family: 'Open Sans', sans-serif; }
+          color: #7e8793; }
           #content-wrapper .devider #price .double-block .package-solution .solutionBox h4 {
             text-align: center;
             padding-top: 1.5rem;
@@ -131,7 +153,8 @@ body {
             font-size: 2rem;
             font-weight: bold; }
           #content-wrapper .devider #price .double-block .package-solution .solutionBox ul li {
-            margin-left: 2rem; }
+            margin-left: 2rem;
+            line-height: 1.5; }
             #content-wrapper .devider #price .double-block .package-solution .solutionBox ul li:first-child {
               margin-left: 1rem;
               padding-bottom: 0.4rem;
@@ -206,4 +229,4 @@ body {
             text-decoration: underline;
             color: deepskyblue; }
 
-/*# sourceMappingURL=style2.css.map */
+/*# sourceMappingURL=style.css.map */
