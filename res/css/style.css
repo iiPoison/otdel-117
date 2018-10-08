@@ -20,7 +20,7 @@ body {
   background-position: 50% 50%;
   background-repeat: no-repeat; }
 
-#top-header {
+.top-header {
   position: fixed;
   z-index: 10;
   width: 100%;
@@ -30,29 +30,29 @@ body {
   height: 5rem;
   display: flex;
   justify-content: center; }
-  #top-header .devider {
+  .top-header__content {
     width: 70rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
-    #top-header .devider .main-logo {
+    .top-header__content__main-logo {
       display: flex;
       flex-direction: row; }
-      #top-header .devider .main-logo .logo {
+      .top-header__content__main-logo__logo {
         border: 3px solid #FFA500; }
-        #top-header .devider .main-logo .logo h2 {
+        .top-header__content__main-logo__logo h2 {
           display: inline-block;
           text-transform: uppercase;
           color: #FFA500;
           font-size: 2rem;
           padding: 0.75rem; }
-      #top-header .devider .main-logo .slogan {
+      .top-header__content__main-logo__slogan {
         color: #E3E3E3;
         margin-left: 0.75rem; }
-        #top-header .devider .main-logo .slogan li {
+        .top-header__content__main-logo__slogan li {
           margin: 0.25rem 0; }
-    #top-header .devider .main-nav ul li {
+    .top-header__content__main-nav ul li {
       display: inline-block;
       margin: 0 0.5rem;
       padding: 0.75rem;
@@ -61,7 +61,7 @@ body {
       transition-delay: 0;
       transition-duration: 300ms;
       transition-timing-function: ease; }
-      #top-header .devider .main-nav ul li a {
+      .top-header__content__main-nav ul li a {
         color: #E7F1D9;
         text-decoration: none;
         font-weight: bold;
@@ -69,13 +69,17 @@ body {
         transition-delay: 0;
         transition-duration: 300ms;
         transition-timing-function: ease; }
-      #top-header .devider .main-nav ul li:hover {
+      .top-header__content__main-nav ul li:hover {
         background-color: #FFA500; }
-        #top-header .devider .main-nav ul li:hover a {
+        .top-header__content__main-nav ul li:hover a {
           color: #05182A; }
-      #top-header .devider .main-nav ul li:nth-child(4) {
-        background-color: #8AC832; }
-        #top-header .devider .main-nav ul li:nth-child(4) a {
+      .top-header__content__main-nav ul li:nth-child(4) {
+        background-color: #11181E; }
+        .top-header__content__main-nav ul li:nth-child(4) a {
+          color: #E7F1D9; }
+      .top-header__content__main-nav ul li:nth-child(4):hover {
+        background-color: #8BC832; }
+        .top-header__content__main-nav ul li:nth-child(4):hover a {
           color: #05182A; }
 
 #content-wrapper {
@@ -90,43 +94,79 @@ body {
   #content-wrapper .devider {
     width: 70rem;
     background-color: rgba(34, 38, 41, 0.7); }
-    #content-wrapper .devider #presentation {
-      margin-top: 2rem; }
-      #content-wrapper .devider #presentation .double-block {
+    #content-wrapper .devider #popular-service {
+      font-family: 'Rubik', sans-serif;
+      display: flex;
+      flex-direction: column; }
+      #content-wrapper .devider #popular-service h2 {
+        margin-top: 2rem;
+        color: orange;
+        font-size: 2.5rem;
+        text-align: center; }
+      #content-wrapper .devider #popular-service .triple-servise-box {
+        margin-top: 2rem;
         width: 100%;
-        height: auto;
         display: flex;
-        flex-direction: row; }
-        #content-wrapper .devider #presentation .double-block .left-block-presentation {
-          width: 50%; }
-          #content-wrapper .devider #presentation .double-block .left-block-presentation .segment-presentation {
-            margin-bottom: 2rem; }
-            #content-wrapper .devider #presentation .double-block .left-block-presentation .segment-presentation h3 {
-              color: orange;
-              font-size: 2rem;
-              margin-bottom: 0.75rem;
-              margin-left: 0.5rem; }
-            #content-wrapper .devider #presentation .double-block .left-block-presentation .segment-presentation p {
-              color: #7e8793;
-              margin: 0 0.5rem;
-              line-height: 1.5; }
-        #content-wrapper .devider #presentation .double-block .right-block-presentation {
-          width: 50%; }
-          #content-wrapper .devider #presentation .double-block .right-block-presentation .segment-presentation {
-            margin-bottom: 2rem; }
-            #content-wrapper .devider #presentation .double-block .right-block-presentation .segment-presentation h3 {
-              color: orange;
-              font-size: 2rem;
-              margin-bottom: 0.75rem;
-              margin-left: 0.5rem; }
-            #content-wrapper .devider #presentation .double-block .right-block-presentation .segment-presentation p {
-              color: #7e8793;
-              margin: 0 0.5rem;
-              line-height: 1.5; }
+        flex-direction: row;
+        justify-content: space-between; }
+        #content-wrapper .devider #popular-service .triple-servise-box .servise-box {
+          border: 2px solid #FFA500;
+          background-color: rgba(13, 22, 29, 0.4);
+          width: 30%;
+          height: auto;
+          margin: 0 1rem; }
+          #content-wrapper .devider #popular-service .triple-servise-box .servise-box .service-description {
+            margin: 1rem;
+            text-align: center;
+            color: #7e8793;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            letter-spacing: 1px; }
+          #content-wrapper .devider #popular-service .triple-servise-box .servise-box .icon-zone {
+            margin: 1.5rem;
+            display: flex;
+            justify-content: center;
+            color: #FFA500; }
+    #content-wrapper .devider #presentation h2 {
+      color: deepskyblue;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem; }
+    #content-wrapper .devider #presentation .double-block {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row; }
+      #content-wrapper .devider #presentation .double-block .left-block-presentation {
+        width: 50%; }
+        #content-wrapper .devider #presentation .double-block .left-block-presentation .segment-presentation {
+          margin-bottom: 2rem; }
+          #content-wrapper .devider #presentation .double-block .left-block-presentation .segment-presentation h3 {
+            color: deepskyblue;
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+            margin-left: 0.5rem; }
+          #content-wrapper .devider #presentation .double-block .left-block-presentation .segment-presentation p {
+            color: #7e8793;
+            margin: 0 0.5rem;
+            line-height: 1.5; }
+      #content-wrapper .devider #presentation .double-block .right-block-presentation {
+        width: 50%; }
+        #content-wrapper .devider #presentation .double-block .right-block-presentation .segment-presentation {
+          margin-bottom: 2rem; }
+          #content-wrapper .devider #presentation .double-block .right-block-presentation .segment-presentation h3 {
+            color: deepskyblue;
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+            margin-left: 0.5rem; }
+          #content-wrapper .devider #presentation .double-block .right-block-presentation .segment-presentation p {
+            color: #7e8793;
+            margin: 0 0.5rem;
+            line-height: 1.5; }
     #content-wrapper .devider #just-line {
       width: 100%;
       margin-top: 2rem;
-      margin-bottom: 6.5rem;
+      margin-bottom: 2rem;
       border-bottom: 2px solid rgba(28, 28, 31, 0.5); }
     #content-wrapper .devider #price .double-block {
       width: 100%;
@@ -165,6 +205,8 @@ body {
             padding-bottom: 2.5rem;
             font-size: 2rem;
             font-weight: bold; }
+          #content-wrapper .devider #price .double-block .package-solution .solutionBox .discount {
+            color: #ff2400; }
       #content-wrapper .devider #price .double-block .cost-services {
         width: 55%;
         margin-right: 1rem; }

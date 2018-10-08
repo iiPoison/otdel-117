@@ -10,12 +10,16 @@
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fenix" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700" rel="stylesheet">
     <!--
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Fenix', serif;
+      font-family: 'Open Sans', sans-serif;
+      font-family: 'Fenix', serif;
+      font-family: 'Rubik', sans-serif;
     -->
     <!-- favicon -->
     <link rel="shortcut icon" href="./res/img/favicon.ico" type="image/x-icon">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- title -->
     <title>Компьютерный сервис</title>
   </head>
@@ -24,25 +28,25 @@
     <!-- particles.js container -->
     <div id="particles-js"></div>
 
-    <header id="top-header">
-      <div class="devider">
-        <div class="main-logo">
-          <div class="logo">
+    <header class="top-header">
+      <div class="top-header__content">
+        <div class="top-header__content__main-logo">
+          <div class="top-header__content__main-logo__logo">
             <h2>Отдел - 117</h2>
           </div>
-          <ul class="slogan">
+          <ul class="top-header__content__main-logo__slogan">
             <li>Ремонт ноутбуков</li>
             <li>и компьютеров</li>
             <li>+7 (929) 977-74-77</li>
           </ul>
         </div>
 
-        <nav class="main-nav">
+        <nav class="top-header__content__main-nav">
           <ul>
-            <li><a href="#body">Главная</a></li>
+            <li><a href="#body">Популярные услуги</a></li>
+            <li><a href="#body">О нас</a></li>
             <li><a href="#just-line">Услуги и цены</a></li>
-            <li><a href="#main-footer">Контакты</a></li>
-            <li><a href="#">Заказать звонок</a></li>
+            <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -51,7 +55,117 @@
     <!-- main content -->
     <div id="content-wrapper">
       <div class="devider">
+
+        <section id="popular-service">
+          <h2>Популярные услуги</h2>
+          <!-- top box -->
+          <div class="triple-servise-box">
+            <!-- 1 -->
+            <div class="servise-box">
+              <p class="service-description">
+                Удаление вирусов и блокировок, отключение навязчивой рекламы
+              </p>
+              <div class="icon-zone">
+                <i class="fas fa-5x fa-pastafarianism"></i>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="servise-box">
+              <p class="service-description">
+                Установка Windows на ПК и ноутбуки
+              </p>
+              <div class="icon-zone">
+                <i class="fab fa-5x fa-windows"></i>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="servise-box">
+              <p class="service-description">
+                Востановление данных с HDD и flash-накопителей
+              </p>
+              <div class="icon-zone">
+                <i class="fas fa-5x fa-database"></i>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- midle box -->
+          <div class="triple-servise-box">
+            <!-- 1 -->
+            <div class="servise-box">
+              <p class="service-description">
+                Компьютер работает медлено?! Оптимизируем операционную систему и "Железо"
+              </p>
+              <div class="icon-zone">
+                <i class="fas fa-5x fa-fighter-jet"></i>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="servise-box">
+              <p class="service-description">
+                Востановление или сброс забытых паролей WIndows
+              </p>
+              <div class="icon-zone">
+                <i class="fas fa-5x fa-key"></i>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="servise-box">
+              <p class="service-description">
+                Настройка роутера и точки доступа Wi-Fi
+              </p>
+              <div class="icon-zone">
+                <i class="fas fa-5x fa-wifi"></i>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- bottom box -->
+          <div class="triple-servise-box">
+            <!-- 1 -->
+            <div class="servise-box">
+              <p class="service-description">
+                Чистка ноутбуков и станционарных ПК от пыли
+              </p>
+              <div class="icon-zone">
+                <i class="fas fa-5x fa-wrench"></i>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div  class="servise-box">
+
+              <p class="service-description">
+                Установка программ и игр
+              </p>
+              <div class="icon-zone">
+                <i class="fas fa-5x fa-dice"></i>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="servise-box">
+              <p class="service-description">
+                Настройка принтера, сканера, МФУ и прочей переферийной техники
+              </p>
+              <div class="icon-zone">
+                <i class="fas fa-5x fa-sitemap"></i>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <div id="just-line"></div>
+
         <section id="presentation">
+          <h2>О нас</h2>
           <div class="double-block">
             <div class="left-block-presentation">
               <div class="segment-presentation">
@@ -59,9 +173,9 @@
                 <div class="segment-presentation">
                   <h3>Цены</h3>
                   <p>
-                    Наши цены на услуги ниже до -50%. У нас адекватные цены на ремонтные работы, а качество на высовком уровне. <br> <br>
+                    Наши цены на услуги ниже до 50%. У нас адекватные цены на ремонтные работы, а качество на высовком уровне. <br> <br>
 
-                    Нам важно, что бы вы остались довольны нашим сервисом и услугами, и рекомендовали нас своим знакомым, друзьям и близким.
+                    Нам важно, что бы вы остались довольны нашим сервисом и услугами, и рекомендовали нас своим близким,друзьям и знакомым.
                   </p>
                 </div>
                 <!-- Оперативность -->
@@ -75,9 +189,9 @@
                 <div class="segment-presentation">
                   <h3>Опыт и связи</h3>
                   <p>
-                    Наш колосальный опыт в IT уходит в далекие 90е. На нашем счету тысячи компьютеров, которым оказали сервисные
-                    работы и сотни благодарных клиентов. За 20ти-летний опыт в области IT, мы получили надежных партнеров: сервисных
-                    инженеров, мастеров,и поставщиков оборудования. Тем самым гарантируем высокое качетсво при низких затратах.
+                    Наш колосальный опыт в IT уходит в далекие 2000е. На нашем счету сотни компьютеров, которым оказали сервисные
+                    работы и сотни благодарных клиентов. За 6-летний опыт в области компьютерного сервиса, мы получили надежных партнеров: сервисных
+                    инженеров, мастеров и поставщиков оборудования. Тем самым гарантируем высокое качетсво при довольно низких затратах.
                   </p>
                 </div>
               </div><!-- .segment-presentation -->
@@ -89,8 +203,8 @@
                 <div class="segment-presentation">
                   <h3>Не навязываем</h3>
                   <p>
-                    Мы наслышаны о компьютерных мастерах, которые работают на "большого дядю". Они заинтересованы навязать Вам
-                    максимально дорогие и не нужные услуги, так как сумма их бонуса от чека составит максимум до 15%. <br><br>
+                    Мы наслышаны о компьютерных мастерах, которые работают на компанию, которых сотни по Москве и области. Такие мастера заинтересованы навязать Вам
+                    максимально дорогие и не нужные услуги, так как их зарплата зависит от суммы чека, и большая доля чека пойдет в компанию, в которой рабоет такой мастер. <br><br>
 
                     У нас другой подход - низкие цены, качество оказаных услуг.
                   </p>
@@ -116,7 +230,7 @@
               </div> <!-- .segment-presentation -->
             </div> <!-- .right-block-presentation -->
           </div>
-        </section>
+        </section> <!-- #presentation -->
 
         <div id="just-line"></div>
 
@@ -124,8 +238,25 @@
           <div class="double-block">
             <!-- пакетные решения -->
             <div class="package-solution">
-              <h3>Пакетные решения</h3>
 
+              <h3>Постоянные скидки</h3>
+
+              <div class="solutionBox">
+                <h4>Мастер опоздал:</h4>
+                <p class="discount">-10%</p>
+              </div>
+
+              <div class="solutionBox">
+                <h4>Пенсионерам:</h4>
+                <p class="discount">-15%</p>
+              </div>
+
+              <div class="solutionBox">
+                <h4>Рекомендовали нас:</h4>
+                <p class="discount">-20%</p>
+              </div>
+
+              <h3>Пакетные решения</h3>
               <div class="solutionBox">
                 <h4>Установка Windows</h4>
                 <ul>
@@ -139,7 +270,7 @@
                   <li>-полный комплект драйверов;</li>
                   <li>-комплект необходимых программ;</li>
                 </ul>
-                <p>19OO ₽</p>
+                <p>1900 ₽</p>
               </div>
 
               <div class="solutionBox">
@@ -646,9 +777,7 @@
             </div>
 
           </div>
-        </section>
-
-
+        </section> <!-- #price -->
       </div>
 
       <footer id="main-footer">
@@ -663,7 +792,7 @@
         <ul>
           <li>&copy; Design, code and ideas by <a href="http://www.bondarevich.com">Artyom Bondarevich</a> </li>
           <li>Russia, Moscow</li>
-          <li>2018</li>
+          <li>2012 - 2018</li>
         </ul>
       </div>
       </footer>

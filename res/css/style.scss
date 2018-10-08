@@ -2,7 +2,8 @@
   .segment-presentation {
     margin-bottom: 2rem;
     h3 {
-      color: orange;
+      //color: orange;
+      color: deepskyblue;
       font-size: 2rem;
       margin-bottom: 0.75rem;
       margin-left: 0.5rem;
@@ -20,7 +21,7 @@
   #just-line {
     width: 100%;
     margin-top: 2rem;
-    margin-bottom: 6.5rem;
+    margin-bottom: 2rem;
     border-bottom: 2px solid rgba(28, 28, 31, 0.5);
   }
 }
@@ -57,7 +58,8 @@ body {
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
-#top-header {
+
+.top-header {
   position: fixed;
   z-index: 10;
   width: 100%;
@@ -67,16 +69,16 @@ body {
   height: 5rem;
   display: flex;
   justify-content: center;
-  .devider {
+  &__content {
     width: 70rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    .main-logo {
+    &__main-logo {
       display: flex;
       flex-direction: row;
-      .logo {
+      &__logo {
         border: 3px solid #FFA500;
         h2 {
           display: inline-block;
@@ -86,7 +88,7 @@ body {
           padding: 0.75rem;
         }
       }
-      .slogan {
+      &__slogan {
         color: #E3E3E3;
         margin-left: 0.75rem;
         li {
@@ -94,7 +96,7 @@ body {
         }
       }
     }
-    .main-nav {
+    &__main-nav {
       ul {
         li {
           display: inline-block;
@@ -121,7 +123,13 @@ body {
             }
           }
           &:nth-child(4) {
-            background-color: #8AC832;
+            background-color: #11181E;
+            a {
+              color: #E7F1D9;
+            }
+          }
+          &:nth-child(4):hover {
+            background-color: #8BC832;
             a {
               color: #05182A;
             }
@@ -131,6 +139,7 @@ body {
     }
   }
 }
+
 #content-wrapper {
   position: relative;
   z-index: 2;
@@ -143,8 +152,53 @@ body {
   .devider {
     width: 70rem;
     background-color: rgba(34, 38, 41, 0.7);
+    #popular-service {
+      font-family: 'Rubik', sans-serif;
+      display: flex;
+      flex-direction: column;
+      h2 {
+        margin-top: 2rem;
+        color: orange;
+        font-size: 2.5rem;
+        text-align: center;
+      }
+      .triple-servise-box {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .servise-box {
+          border: 2px solid #FFA500;
+          background-color: rgba(13, 22, 29, 0.4);
+          width: 30%;
+          height: auto;
+          margin: 0 1rem;
+          .service-description {
+            margin: 1rem;
+            text-align: center;
+            color: #7e8793;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            letter-spacing: 1px;
+          }
+          .icon-zone {
+            margin: 1.5rem;
+            display: flex;
+            justify-content: center;
+            color: #FFA500;
+          }
+        }
+      }
+    }
+
     #presentation {
-      margin-top: 2rem;
+      h2 {
+        color: deepskyblue;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
       .double-block {
         @include doubleBlock;
         .left-block-presentation {
@@ -199,6 +253,9 @@ body {
               padding-bottom: 2.5rem;
               font-size: 2rem;
               font-weight: bold;
+            }
+            .discount {
+              color: #ff2400;
             }
           }
         }
