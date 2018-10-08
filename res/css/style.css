@@ -74,13 +74,13 @@ body {
         .top-header__content__main-nav ul li:hover a {
           color: #05182A; }
       .top-header__content__main-nav ul li:nth-child(4) {
-        background-color: #11181E; }
+        background-color: #FFA500; }
         .top-header__content__main-nav ul li:nth-child(4) a {
-          color: #E7F1D9; }
-      .top-header__content__main-nav ul li:nth-child(4):hover {
-        background-color: #8BC832; }
-        .top-header__content__main-nav ul li:nth-child(4):hover a {
           color: #05182A; }
+      .top-header__content__main-nav ul li:nth-child(2):hover {
+        background-color: deepskyblue; }
+      .top-header__content__main-nav ul li:nth-child(3):hover {
+        background-color: #8BC832; }
 
 #content-wrapper {
   position: relative;
@@ -118,7 +118,7 @@ body {
           #content-wrapper .devider #popular-service .triple-servise-box .servise-box .service-description {
             margin: 1rem;
             text-align: center;
-            color: #7e8793;
+            color: #A3A8AF;
             font-size: 1.2rem;
             line-height: 1.6;
             letter-spacing: 1px; }
@@ -147,7 +147,7 @@ body {
             margin-bottom: 0.75rem;
             margin-left: 0.5rem; }
           #content-wrapper .devider #presentation .double-block .left-block-presentation .segment-presentation p {
-            color: #7e8793;
+            color: #A3A8AF;
             margin: 0 0.5rem;
             line-height: 1.5; }
       #content-wrapper .devider #presentation .double-block .right-block-presentation {
@@ -160,13 +160,13 @@ body {
             margin-bottom: 0.75rem;
             margin-left: 0.5rem; }
           #content-wrapper .devider #presentation .double-block .right-block-presentation .segment-presentation p {
-            color: #7e8793;
+            color: #A3A8AF;
             margin: 0 0.5rem;
             line-height: 1.5; }
-    #content-wrapper .devider #just-line {
+    #content-wrapper .devider .just-line {
       width: 100%;
       margin-top: 2rem;
-      margin-bottom: 2rem;
+      margin-bottom: 5rem;
       border-bottom: 2px solid rgba(28, 28, 31, 0.5); }
     #content-wrapper .devider #price .double-block {
       width: 100%;
@@ -185,7 +185,7 @@ body {
           width: auto;
           margin: 0 1.5rem;
           margin-bottom: 2.5rem;
-          color: #7e8793; }
+          color: #A3A8AF; }
           #content-wrapper .devider #price .double-block .package-solution .solutionBox h4 {
             text-align: center;
             padding-top: 1.5rem;
@@ -217,7 +217,7 @@ body {
           color: #8ac832; }
         #content-wrapper .devider #price .double-block .cost-services table {
           margin-bottom: 3rem;
-          color: #7e8793;
+          color: #A3A8AF;
           width: 100%; }
           #content-wrapper .devider #price .double-block .cost-services table thead tr {
             padding-bottom: 1rem; }

@@ -1,8 +1,11 @@
+//$mainText: #7e8793;
+$mainText: #A3A8AF;
+
+
 @mixin segmentPresentation {
   .segment-presentation {
     margin-bottom: 2rem;
     h3 {
-      //color: orange;
       color: deepskyblue;
       font-size: 2rem;
       margin-bottom: 0.75rem;
@@ -10,7 +13,7 @@
 
     }
     p {
-      color: #7e8793;
+      color: $mainText;
       margin: 0 0.5rem;
       line-height: 1.5;
     }
@@ -18,10 +21,10 @@
 }
 
 @mixin justLine {
-  #just-line {
+  .just-line {
     width: 100%;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     border-bottom: 2px solid rgba(28, 28, 31, 0.5);
   }
 }
@@ -38,6 +41,8 @@
   font-size: 1.1rem;
 }
 
+
+
 body {
   margin: 0;
   padding: 0;
@@ -45,7 +50,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-//для визуального конфига https://vincentgarreau.com/particles.js/
+//для визуального конфига => https://vincentgarreau.com/particles.js/
 #particles-js{
   position: fixed;
   z-index: 1;
@@ -123,16 +128,16 @@ body {
             }
           }
           &:nth-child(4) {
-            background-color: #11181E;
-            a {
-              color: #E7F1D9;
-            }
-          }
-          &:nth-child(4):hover {
-            background-color: #8BC832;
+            background-color: #FFA500;
             a {
               color: #05182A;
             }
+          }
+          &:nth-child(2):hover {
+            background-color: deepskyblue;
+          }
+          &:nth-child(3):hover {
+            background-color: #8BC832;
           }
         }
       }
@@ -177,7 +182,7 @@ body {
           .service-description {
             margin: 1rem;
             text-align: center;
-            color: #7e8793;
+            color: $mainText;
             font-size: 1.2rem;
             line-height: 1.6;
             letter-spacing: 1px;
@@ -228,7 +233,7 @@ body {
             width: auto;
             margin: 0 1.5rem;
             margin-bottom: 2.5rem;
-            color: #7e8793;
+            color: $mainText;
             h4 {
               text-align: center;
               padding-top: 1.5rem;
@@ -270,7 +275,7 @@ body {
           }
           table {
             margin-bottom: 3rem;
-            color: #7e8793;
+            color: $mainText;
             width: 100%;
             thead {
 
