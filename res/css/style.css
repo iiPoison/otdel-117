@@ -27,18 +27,33 @@ body {
   top: 0;
   left: 0;
   background-color: #181C1F;
-  height: 5rem;
+  height: auto;
   display: flex;
   justify-content: center; }
+  @media only screen and (max-width: 380px) {
+    .top-header {
+      top: -20.5rem; } }
   .top-header__content {
-    width: 70rem;
+    max-width: 70rem;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
+    @media only screen and (max-width: 724px) {
+      .top-header__content {
+        justify-content: center; } }
+    @media only screen and (max-width: 382px) {
+      .top-header__content {
+        flex-direction: column; } }
     .top-header__content__main-logo {
       display: flex;
-      flex-direction: row; }
+      flex-direction: row;
+      margin: 0.75rem; }
+      @media only screen and (max-width: 981px) {
+        .top-header__content__main-logo {
+          flex-direction: column;
+          align-items: center; } }
       .top-header__content__main-logo__logo {
         border: 3px solid #FFA500; }
         .top-header__content__main-logo__logo h2 {
@@ -47,11 +62,27 @@ body {
           color: #FFA500;
           font-size: 2rem;
           padding: 0.75rem; }
+          @media only screen and (max-width: 768px) {
+            .top-header__content__main-logo__logo h2 {
+              font-size: 1.5rem; } }
+          @media only screen and (max-width: 400px) {
+            .top-header__content__main-logo__logo h2 {
+              font-size: 1.8rem; } }
       .top-header__content__main-logo__slogan {
         color: #E3E3E3;
         margin-left: 0.75rem; }
+        @media only screen and (max-width: 981px) {
+          .top-header__content__main-logo__slogan {
+            font-size: 1.2rem; } }
+        @media only screen and (max-width: 400px) {
+          .top-header__content__main-logo__slogan {
+            font-size: 1.2rem; } }
         .top-header__content__main-logo__slogan li {
           margin: 0.25rem 0; }
+    @media only screen and (max-width: 724px) {
+      .top-header__content__main-nav ul {
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem; } }
     .top-header__content__main-nav ul li {
       display: inline-block;
       margin: 0 0.5rem;
@@ -61,6 +92,13 @@ body {
       transition-delay: 0;
       transition-duration: 300ms;
       transition-timing-function: ease; }
+      @media only screen and (max-width: 768px) {
+        .top-header__content__main-nav ul li {
+          padding: 0.75rem;
+          font-size: 0.9rem; } }
+      @media only screen and (max-width: 724px) {
+        .top-header__content__main-nav ul li {
+          display: block; } }
       .top-header__content__main-nav ul li a {
         color: #E7F1D9;
         text-decoration: none;
@@ -81,6 +119,15 @@ body {
         background-color: deepskyblue; }
       .top-header__content__main-nav ul li:nth-child(3):hover {
         background-color: #8BC832; }
+    .top-header__content #slideTopMenu {
+      display: none; }
+      @media only screen and (max-width: 380px) {
+        .top-header__content #slideTopMenu {
+          display: block;
+          top: 17.2rem;
+          left: 1.2rem;
+          color: #FFA500;
+          margin-bottom: 0.25rem; } }
 
 #content-wrapper {
   position: relative;
@@ -91,8 +138,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 768px) {
+    #content-wrapper {
+      top: 7.5rem; } }
+  @media only screen and (max-width: 724px) {
+    #content-wrapper {
+      top: 9.5rem; } }
+  @media only screen and (max-width: 382px) {
+    #content-wrapper {
+      top: 2.5rem; } }
   #content-wrapper .devider {
-    width: 70rem;
+    max-width: 70rem;
+    width: 100%;
     background-color: rgba(34, 38, 41, 0.7); }
     #content-wrapper .devider #popular-service {
       font-family: 'Rubik', sans-serif;
@@ -109,12 +166,20 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between; }
+        @media only screen and (max-width: 576px) {
+          #content-wrapper .devider #popular-service .triple-servise-box {
+            flex-direction: column;
+            justify-content: center; } }
         #content-wrapper .devider #popular-service .triple-servise-box .servise-box {
           border: 2px solid #FFA500;
           background-color: rgba(13, 22, 29, 0.4);
           width: 30%;
           height: auto;
           margin: 0 1rem; }
+          @media only screen and (max-width: 576px) {
+            #content-wrapper .devider #popular-service .triple-servise-box .servise-box {
+              width: 95%;
+              margin: 0.75rem; } }
           #content-wrapper .devider #popular-service .triple-servise-box .servise-box .service-description {
             margin: 1rem;
             text-align: center;
@@ -127,42 +192,53 @@ body {
             display: flex;
             justify-content: center;
             color: #FFA500; }
-    #content-wrapper .devider #presentation h2 {
-      color: deepskyblue;
-      font-size: 2.5rem;
-      text-align: center;
-      margin-bottom: 2rem; }
-    #content-wrapper .devider #presentation .double-block {
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: row; }
-      #content-wrapper .devider #presentation .double-block .left-block-presentation {
-        width: 50%; }
-        #content-wrapper .devider #presentation .double-block .left-block-presentation .segment-presentation {
-          margin-bottom: 2rem; }
-          #content-wrapper .devider #presentation .double-block .left-block-presentation .segment-presentation h3 {
-            color: deepskyblue;
-            font-size: 2rem;
-            margin-bottom: 0.75rem;
-            margin-left: 0.5rem; }
-          #content-wrapper .devider #presentation .double-block .left-block-presentation .segment-presentation p {
-            color: #A3A8AF;
-            margin: 0 0.5rem;
-            line-height: 1.5; }
-      #content-wrapper .devider #presentation .double-block .right-block-presentation {
-        width: 50%; }
-        #content-wrapper .devider #presentation .double-block .right-block-presentation .segment-presentation {
-          margin-bottom: 2rem; }
-          #content-wrapper .devider #presentation .double-block .right-block-presentation .segment-presentation h3 {
-            color: deepskyblue;
-            font-size: 2rem;
-            margin-bottom: 0.75rem;
-            margin-left: 0.5rem; }
-          #content-wrapper .devider #presentation .double-block .right-block-presentation .segment-presentation p {
-            color: #A3A8AF;
-            margin: 0 0.5rem;
-            line-height: 1.5; }
+    #content-wrapper .devider #presentation {
+      margin: 0 1rem; }
+      #content-wrapper .devider #presentation h2 {
+        color: deepskyblue;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 2rem; }
+      #content-wrapper .devider #presentation .double-block {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row; }
+        @media only screen and (max-width: 576px) {
+          #content-wrapper .devider #presentation .double-block {
+            flex-direction: column; } }
+        #content-wrapper .devider #presentation .double-block .left-block-presentation {
+          width: 50%; }
+          #content-wrapper .devider #presentation .double-block .left-block-presentation .segment-presentation {
+            margin-bottom: 2rem; }
+            #content-wrapper .devider #presentation .double-block .left-block-presentation .segment-presentation h3 {
+              color: deepskyblue;
+              font-size: 2rem;
+              margin-bottom: 0.75rem;
+              margin-left: 0.5rem; }
+            #content-wrapper .devider #presentation .double-block .left-block-presentation .segment-presentation p {
+              color: #A3A8AF;
+              margin: 0 0.5rem;
+              line-height: 1.5; }
+          @media only screen and (max-width: 576px) {
+            #content-wrapper .devider #presentation .double-block .left-block-presentation {
+              width: 100%; } }
+        #content-wrapper .devider #presentation .double-block .right-block-presentation {
+          width: 50%; }
+          #content-wrapper .devider #presentation .double-block .right-block-presentation .segment-presentation {
+            margin-bottom: 2rem; }
+            #content-wrapper .devider #presentation .double-block .right-block-presentation .segment-presentation h3 {
+              color: deepskyblue;
+              font-size: 2rem;
+              margin-bottom: 0.75rem;
+              margin-left: 0.5rem; }
+            #content-wrapper .devider #presentation .double-block .right-block-presentation .segment-presentation p {
+              color: #A3A8AF;
+              margin: 0 0.5rem;
+              line-height: 1.5; }
+          @media only screen and (max-width: 576px) {
+            #content-wrapper .devider #presentation .double-block .right-block-presentation {
+              width: 100%; } }
     #content-wrapper .devider .just-line {
       width: 100%;
       margin-top: 2rem;
@@ -173,8 +249,14 @@ body {
       height: auto;
       display: flex;
       flex-direction: row; }
+      @media only screen and (max-width: 576px) {
+        #content-wrapper .devider #price .double-block {
+          flex-direction: column; } }
       #content-wrapper .devider #price .double-block .package-solution {
         width: 45%; }
+        @media only screen and (max-width: 576px) {
+          #content-wrapper .devider #price .double-block .package-solution {
+            width: 100%; } }
         #content-wrapper .devider #price .double-block .package-solution h3 {
           font-size: 2rem;
           text-align: center;
@@ -186,6 +268,12 @@ body {
           margin: 0 1.5rem;
           margin-bottom: 2.5rem;
           color: #A3A8AF; }
+          @media only screen and (max-width: 576px) {
+            #content-wrapper .devider #price .double-block .package-solution .solutionBox {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-bottom: 1.5rem; } }
           #content-wrapper .devider #price .double-block .package-solution .solutionBox h4 {
             text-align: center;
             padding-top: 1.5rem;
@@ -207,9 +295,22 @@ body {
             font-weight: bold; }
           #content-wrapper .devider #price .double-block .package-solution .solutionBox .discount {
             color: #ff2400; }
+            @media only screen and (max-width: 576px) {
+              #content-wrapper .devider #price .double-block .package-solution .solutionBox .discount {
+                font-size: 1.5rem;
+                padding: 0;
+                margin: 0;
+                margin-bottom: 0.75rem; } }
+          @media only screen and (max-width: 576px) {
+            #content-wrapper .devider #price .double-block .package-solution .solutionBox .discount-caption {
+              font-size: 1.5rem;
+              margin-bottom: 1rem; } }
       #content-wrapper .devider #price .double-block .cost-services {
         width: 55%;
         margin-right: 1rem; }
+        @media only screen and (max-width: 576px) {
+          #content-wrapper .devider #price .double-block .cost-services {
+            width: 100%; } }
         #content-wrapper .devider #price .double-block .cost-services h3 {
           font-size: 2rem;
           text-align: center;
@@ -219,13 +320,23 @@ body {
           margin-bottom: 3rem;
           color: #A3A8AF;
           width: 100%; }
+          @media only screen and (max-width: 576px) {
+            #content-wrapper .devider #price .double-block .cost-services table {
+              margin: 0.75rem;
+              width: 95%; } }
           #content-wrapper .devider #price .double-block .cost-services table thead tr {
             padding-bottom: 1rem; }
             #content-wrapper .devider #price .double-block .cost-services table thead tr th {
               font-size: 1.6rem;
               text-align: left; }
+              @media only screen and (max-width: 576px) {
+                #content-wrapper .devider #price .double-block .cost-services table thead tr th {
+                  font-size: 1.4rem; } }
           #content-wrapper .devider #price .double-block .cost-services table tbody {
             font-size: 1rem; }
+            @media only screen and (max-width: 576px) {
+              #content-wrapper .devider #price .double-block .cost-services table tbody {
+                font-size: 0.85rem; } }
             #content-wrapper .devider #price .double-block .cost-services table tbody tr {
               background-color: rgba(13, 22, 29, 0.4);
               line-height: 1.4rem; }
@@ -235,11 +346,20 @@ body {
                 #content-wrapper .devider #price .double-block .cost-services table tbody tr td:nth-child(2) {
                   text-align: right;
                   width: 20%; }
+                  @media only screen and (max-width: 576px) {
+                    #content-wrapper .devider #price .double-block .cost-services table tbody tr td:nth-child(2) {
+                      width: 15%; } }
+                  @media only screen and (max-width: 380px) {
+                    #content-wrapper .devider #price .double-block .cost-services table tbody tr td:nth-child(2) {
+                      width: 20%; } }
           #content-wrapper .devider #price .double-block .cost-services table tfoot {
             color: #8ac832;
             font-size: 0.9rem; }
         #content-wrapper .devider #price .double-block .cost-services .cost-discription {
           margin-bottom: 2rem; }
+          @media only screen and (max-width: 576px) {
+            #content-wrapper .devider #price .double-block .cost-services .cost-discription {
+              margin: 0.75rem; } }
           #content-wrapper .devider #price .double-block .cost-services .cost-discription p {
             color: #8ac832;
             font-size: 0.9rem; }
@@ -252,11 +372,21 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
+    @media only screen and (max-width: 576px) {
+      #content-wrapper footer {
+        height: auto; } }
+    @media only screen and (max-width: 576px) {
+      #content-wrapper footer .contact ul {
+        margin-top: 1rem; } }
     #content-wrapper footer .contact ul li {
       display: inline-block;
       margin: 0 1rem;
       font-size: 1.1rem;
       color: #858589; }
+      @media only screen and (max-width: 576px) {
+        #content-wrapper footer .contact ul li {
+          display: block;
+          margin: 1rem 0; } }
     #content-wrapper footer .copyright {
       margin-top: 1.5rem;
       border-top: 1px solid #636366; }
